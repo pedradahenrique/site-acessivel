@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+    let tamanhoAtualFonte = 1;
     const aumentaFonteBotao = document.getElementById('aumentar-fonte');
     const diminuiFonteBotao = document.getElementById('diminuir-fonte')
     aumentaFonteBotao.addEventListener('click', function(){
@@ -11,4 +12,8 @@ diminuiFonteBotao.addEventListener('click', function(){
     document.body.style.fontSize = `${tamanhoAtualFonte}rem`
 
 })
+})
+botaoDeAcessibilidade.addEventListener('click', function () {
+    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+    opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
 })
